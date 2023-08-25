@@ -1,0 +1,96 @@
+.skills {
+  font-size: 25px;
+  margin-left: 48%;
+  margin-top: 10px;
+  color: yellow;
+  font-weight: 600;
+}
+.pricing {
+  width: 100%;
+  padding: 3rem 2rem;
+}
+.cardcontainer {
+  width: 700px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+  cursor: pointer;
+}
+.pricing h1 {
+  color: rgb(240, 11, 164);
+  text-align: center;
+  margin: auto;
+  font-size: 22px;
+}
+.pricing h2 {
+  color: green;
+  margin: auto;
+  font-size: 22px;
+}
+.card {
+  border: 2px solid rgb(240, 11, 164);
+  border-radius: 20px;
+  height: 250px;
+  box-shadow: 3px 3px 5px 3px;
+  background-color: white;
+}
+.cardcontainer .card h2 {
+  display: flex;
+  align-items: center;
+  margin-left: 30%;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.card p {
+  display: flex;
+}
+
+.card:hover {
+  background-color: #141414;
+  transition: 0.5s linear;
+  border: 2px solid yellow;
+}
+.card .btn2 {
+  margin-bottom: 10px;
+  color: black;
+  font-weight: 500;
+  background-color: yellow;
+  text-align: center;
+  margin-left: 15%;
+  margin-right: 15%;
+  border: 2px solid rgb(240, 11, 164);
+  border-radius: 12px;
+}
+.btn2:hover {
+  color: white;
+  background-color: rgb(240, 11, 164);
+  transition: 0.5s linear;
+}
+
+@media screen and (max-width: 740px) {
+  .cardcontainer {
+    max-width: 90%;
+    margin: Auto;
+    grid-template-columns: 1fr;
+    grid-gap: 40px;
+    cursor: pointer;
+  }
+
+  .skills {
+    margin-left: 32%;
+  }
+  .cardcontainer .card h2 {
+    margin-left: 40%;
+    margin-bottom: 8px;
+  }   
+  .card .btn2 {
+    margin-left: 40%;
+    margin-right: 30%;
+    align-items: center;
+  }
+
+  .card {
+    width: 70%;
+  }
+}

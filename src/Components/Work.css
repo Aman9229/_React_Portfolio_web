@@ -1,0 +1,71 @@
+.projectheading {
+  text-align: center;
+  padding: 4rem 0 2ren 0;
+  font-size: 30px;
+  color: yellow;
+  cursor: pointer;
+}
+.projectheading:hover {
+  color: rgb(240, 11, 164);
+}
+.projectcontainer {
+  max-width: 1140px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+  padding-bottom: 5rem;
+  cursor: pointer;
+}
+.projectcard {
+  background-color: #181717;
+  padding: 1.2rem 1rem;
+  border-radius: 25px;
+  border: 2px solid rgb(240, 11, 164);
+  box-shadow: 2px 2px 2px 2px;
+}
+.projectcard:hover {
+  background-color: #0f0e0e;
+  transition: 0.5s linear;
+  border: 2px solid yellow;
+}
+.projectcard img {
+  width: 100%;
+}
+.projecttitle {
+  color: rgb(240, 11, 164);
+  padding: 1rem 0;
+  font-size: 20px;
+}
+.projectdetail p {
+  padding-bottom: 1rem;
+  font-size: 1.1rem;
+}
+.probtn {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+}
+.probtn .btn3 {
+  margin-left: 20px;
+  font-weight: 600;
+  border: 1.5px solid rgb(240, 11, 164);
+  border-radius: 20px;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  width: 70px;
+  background: yellow;
+}
+.probtn .btn3:hover {
+  color: white;
+  background: rgb(240, 11, 164);
+  transition: 0.5s linear;
+}
+@media screen and (max-width: 740px) {
+  .projectcontainer {
+    max-width: 90%;
+    margin: auto;
+    grid-template-columns: 1fr;
+  }
+}
